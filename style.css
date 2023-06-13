@@ -72,7 +72,7 @@ section{
 }
 
 .home-img img{
-    width: 35vw;
+    width: 30vw;
    animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -161,7 +161,7 @@ span{
 }
 
 .about-img img{
-    width: 35vw;
+    width: 27vw;
 }
 
 .heading{
@@ -359,6 +359,8 @@ span{
 
 .footer-text p{
     font-size: 1.6rem;
+    text-align: center;
+    color: #CBB26A;
 }
 
 .footer-iconTop a{
@@ -515,4 +517,12 @@ span{
     margin-top: 2rem;
     }
 
+}
+
+#msg{
+    color: #CBB26A;
+    margin-top: -10px;
+    display: block;
+    text-align: center;
+    font-size: 1.6rem;
 }
