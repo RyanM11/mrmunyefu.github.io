@@ -474,8 +474,7 @@ span{
     }
 
     .about img{
-        width:50vw;
-        margin-top:4rem;
+        display:none;
     }
 
     .skills h2{
