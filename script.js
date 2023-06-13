@@ -31,7 +31,7 @@ let navlinks = document.querySelectorAll('header nav a');
 
 let header=document.querySelector('header');
 
-header.classList.toggles('sticky', window.scrollY >100 );
+header.classList.toggle('sticky', window.scrollY >100 );
 
 
 menuIcon.classList.remove('fa-x');
