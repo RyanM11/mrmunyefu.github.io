@@ -488,7 +488,7 @@ span{
 }
 
 @media (max-width:450px){
-    hmlt{
+    html{
         font-size: 50%;
     }
 
