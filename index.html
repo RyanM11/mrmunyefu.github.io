@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Murunga Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/abefc70b9c.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <header class="header">
+        <img src="images\ryan-logo.png" class="logo">
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Ryan Murunga</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>Efficient, detail-oriented Data Scientist with strong 
+                analytical skills,
+                 effective communication, and 
+                 proactive mindset. Committed to optimizing processes
+                 and driving informed decision-making for enhanced corporate performance.</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/ryan-murunga-b5aa52198?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BIL87MlzaQqyFn1Y%2Fx%2F5A4A%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+            <a href="#" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="images\ryan-photo2.png" alt="">
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images\ryan-photo3.png" alt="">
+
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Data Scientist</h3>
+            <p>
+                With a keen eye for operational efficiency, I excel at 
+                fine-tuning methodologies and streamlining procedures. 
+                My meticulous attention to detail and strong analytical reasoning 
+                enable me to uncover valuable insights, driving informed 
+                decision-making. I effectively communicate complex ideas to diverse 
+                stakeholders and execute responsibilities with unwavering dependability 
+                and precision. Proactively seeking continuous improvement, I demonstrate initiative and a desire 
+                for knowledge acquisition. Eager to leverage my data science expertise, I 
+                am committed to enhancing corporate performance as a skilled Data Scientist.</p>
+
+                
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+
+
+        <div class="skills-cointainer">
+            
+            <div class="skills-box">
+                <i class="fa-solid fa-filter"></i>
+                <h3>Data Science</h3>
+                <p>Proficient in data analysis, machine learning,
+                    statistical modeling, and data visualization.</p>
+            </div>
+
+            <div class="skills-box">
+                <i class="fa-solid fa-cloud"></i>
+                <h3>Cloud technologies</h3>
+                <p>Microsoft Azure, Google Cloud
+                    Platform</p>
+            </div>
+
+            <div class="skills-box">
+                <i class="fa-solid fa-chart-column"></i>
+                <h3>Statistical Analysis</h3>
+                <p>Solid understanding of statistical
+                    concepts and methodologies, hypothesis testing, and
+                    regression analysis.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+
+            <div class="portfolio-box">
+                <img src="images\churn.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Customer churn</h4>
+                    <p>Built a machine learning model using customer data 
+                        to accurately predict churn rates, allowing businesses to proactively
+                         identify at-risk customers and
+                         implement retention strategies to reduce
+                          customer churn and increase long-term profitability.</p>
+
+                          <a href="https://github.com/RyanM11/churnPrediction.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images\loan_defaulting.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Loan defaulting</h4>
+                    <p>Developed a machine learning model using historical loan 
+                        data to accurately predict the likelihood of loan defaulting,
+                         enabling lenders to make informed
+                          decisions and mitigate risks in the lending process.</p>
+
+                          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+                
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+                
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p><p><i class="fa-solid fa-crown"></i> Copyright © Ryan. <i class="fa-solid fa-crown"></i></p></p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
