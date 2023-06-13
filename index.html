@@ -40,7 +40,7 @@
                 <a href="https://www.linkedin.com/in/ryan-murunga-b5aa52198?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BIL87MlzaQqyFn1Y%2Fx%2F5A4A%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
             </div>
 
-            <a href="#" class="btn">Download CV</a>
+            <a href="images\ryanResume.pdf" download class="btn">Download CV</a>
         </div>
 
         <div class="home-img">
@@ -144,23 +144,26 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
-
-        <form action="#">
+        <form name="submit-to-google-sheet">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input type="text" name="Name" placeholder="Full Name">
+                <input type="email" name="Email" placeholder="Email Address">
                 
             </div>
 
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
+                <input type="text" name="Number" placeholder="Mobile Number">
+                <input type="text" name="Subject" placeholder="Email Subject">
                 
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+            <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn">Send Message</button>
 
         </form>
+        <span id="msg"></span>
+
+
+
     </section>
 
     <footer class="footer">
@@ -179,10 +182,27 @@
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyoFi9VEekOt9PGDlRvXLLwmQ4_yeD7UTsOykqojg8L1zj5OFjT6qLeLxJcNZz1d7mT/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
 
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+            .catch(error => console.error('Error!', error.message))
+        })
+
+    </script>
 
     <script src="script.js"></script>
-
 
 </body>
 </html>
